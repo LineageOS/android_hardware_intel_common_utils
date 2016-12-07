@@ -11,6 +11,7 @@ LOCAL_SHARED_LIBRARIES := \
     libdl \
     libmrm_arbitrator \
 
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 
 LOCAL_C_INCLUDES := \
     $(TARGET_OUT_HEADERS)/khronos/openmax \
