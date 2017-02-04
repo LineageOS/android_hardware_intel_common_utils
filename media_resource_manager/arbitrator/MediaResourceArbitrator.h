@@ -1,1 +1,1 @@
-../include/media_resource_manager/MediaResourceArbitrator.h
+../include/MediaResourceArbitrator.h
