@@ -48,6 +48,10 @@ ifeq ($(TARGET_VPP_USE_GEN),true)
     LOCAL_CFLAGS += -DTARGET_VPP_USE_GEN
 endif
 
+ifeq ($(BOARD_USES_PRE_ION_X86),true)
+   LOCAL_CFLAGS += -DPRE_ION_X86
+endif
+
 LOCAL_CFLAGS += -Werror
 
 # TODO: Fix this:

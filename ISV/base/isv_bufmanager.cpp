@@ -95,7 +95,7 @@ status_t ISVBuffer::initBufferInfo(uint32_t hackFormat)
             return UNKNOWN_ERROR;
     }
     IMG_native_handle_t* grallocHandle = (IMG_native_handle_t*)mGrallocHandle;
-#ifndef ASUS_ZENFONE2_LP_BLOBS
+#ifndef PRE_ION_X86
     mStride = grallocHandle->aiStride[0];
 #else
     mStride = grallocHandle->iWidth;

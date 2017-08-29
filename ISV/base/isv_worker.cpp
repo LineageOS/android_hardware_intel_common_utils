@@ -244,7 +244,7 @@ status_t ISVWorker::allocSurface(uint32_t* width, uint32_t* height,
             vaExtBuf.offsets[2] = vaExtBuf.offsets[1] + (stride / 2) * (*height / 2);
             vaExtBuf.offsets[3] = 0;
             break;
-#ifndef ASUS_ZENFONE2_LP_BLOBS
+#ifndef PRE_ION_X86
         case HAL_PIXEL_FORMAT_INTEL_YV12:
             vaExtBuf.pixel_format = VA_FOURCC_YV12;
             vaExtBuf.num_planes = 3;
