@@ -30,6 +30,7 @@ LOCAL_SHARED_LIBRARIES := \
     libsync \
 
 LOCAL_HEADER_LIBRARIES := \
+    intel_hwcomposer_headers \
     libsystem_headers \
     libnativebase_headers
 
