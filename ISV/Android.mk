@@ -31,6 +31,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_HEADER_LIBRARIES := \
     intel_hwcomposer_headers \
+    khronos_openmax_headers \
     libsystem_headers \
     libnativebase_headers
 
@@ -40,8 +41,6 @@ LOCAL_C_INCLUDES := \
     $(call include-path-for, frameworks-openmax) \
     $(TARGET_OUT_HEADERS)/libmedia_utils_vpp \
     $(TARGET_OUT_HEADERS)/display \
-    $(TARGET_OUT_HEADERS)/khronos/openmax \
-    $(TARGET_OUT_HEADERS)/libva \
     $(TARGET_OUT_HEADERS)/pvr/hal \
     $(TARGET_OUT_HEADERS)/media_resource_manager/ \
     $(call include-path-for, frameworks-native)/media/openmax

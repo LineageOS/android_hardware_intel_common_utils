@@ -15,11 +15,11 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 
 LOCAL_C_INCLUDES := \
-    $(TARGET_OUT_HEADERS)/khronos/openmax \
     $(call include-path-for, frameworks-native)/media/openmax \
     $(LOCAL_PATH)/../arbitrator \
 
 
+LOCAL_HEADER_LIBRARIES := khronos_openmax_headers
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libmrm_omx_adaptor
 
