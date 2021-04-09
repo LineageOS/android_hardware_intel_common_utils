@@ -308,6 +308,10 @@ OMX_API OMX_ERRORTYPE OMX_GetRolesOfComponent (
     OMX_INOUT OMX_U32 *pNumRoles,
     OMX_OUT OMX_U8 **roles)
 {
+    if (roles == NULL) {
+        return OMX_ErrorBadParameter;
+    }
+
     ALOGD_IF(ISV_CORE_DEBUG, "%s: enter", __func__);
     pthread_mutex_lock(&g_module_lock);
     for (OMX_U32 j = 0; j < CORE_NUMBER; j++) {
